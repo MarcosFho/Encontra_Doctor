@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Laboratórios - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html" class="active"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="clinicas-container">
+      <div class="clinicas-header">
+        <h1>Laboratórios Parceiros</h1>
+        <p>Encontre os melhores laboratórios de análises clínicas próximos a você</p>
+      </div>
+
+      <div class="clinicas-filtros">
+        <div class="filtro-grupo">
+          <label for="tipo-exame">Tipo de Exame</label>
+          <select id="tipo-exame">
+            <option value="">Todos os tipos</option>
+            <option value="sangue">Exames de Sangue</option>
+            <option value="imagem">Exames de Imagem</option>
+            <option value="urina">Exames de Urina</option>S
+            <option value="genetica">Exames Genéticos</option>
+          </select>
+        </div>
+        <div class="filtro-grupo">
+          <label for="localizacao">Localização</label>
+          <input type="text" id="localizacao" placeholder="Digite um bairro ou região">
+        </div>
+        <div class="filtro-grupo">
+          <label for="convenio">Convênio</label>
+          <select id="convenio">
+            <option value="">Todos os convênios</option>
+            <option value="unimed">Unimed</option>
+            <option value="amil">Amil</option>
+            <option value="bradesco">Bradesco Saúde</option>
+            <option value="sulamerica">SulAmérica</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="clinicas-grid">
+        <!-- Laboratório 1 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="laboratorio-central.jpg" alt="Laboratório Central" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Laboratório Central</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Cesario Alvim, 1500 - Aparecida, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>06:00 - 18:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 3333-4444</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-vial"></i>
+                <span>+50 tipos de exames</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-home"></i>
+                <span>Coleta domiciliar</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-numero">4.5</span>
+              <span class="rating-total">(230 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Análises Clínicas</span>
+              <span class="especialidade-tag">Exames de Sangue</span>
+              <span class="especialidade-tag">PCR</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Exame
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laboratório 2 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="centro-de-diagnosticos-avancados.jpg" alt="Centro de Diagnósticos Avançados" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Centro de Diagnósticos Avançados</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Augusto Cesar, 800 - Copacabana, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>07:00 - 19:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 2222-3333</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-microscope"></i>
+                <span>Exames complexos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-file-medical-alt"></i>
+                <span>Resultado online</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-numero">5.0</span>
+              <span class="rating-total">(180 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Ressonância</span>
+              <span class="especialidade-tag">Tomografia</span>
+              <span class="especialidade-tag">Ultrassom</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Exame
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laboratório 3 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="lab-genetica.jpg" alt="Lab Genética" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Lab Genética</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Marcos de Freitas Costa, 2000 - Oswaldo Resende, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 18:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 4444-5555</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-dna"></i>
+                <span>Testes genéticos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>Consulta inclusa</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-numero">4.1</span>
+              <span class="rating-total">(95 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Teste de DNA</span>
+              <span class="especialidade-tag">Aconselhamento</span>
+              <span class="especialidade-tag">Genética</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laboratório 4 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Laboratório Cardio Diagnósticos.jpg" alt="Laboratório Cardio Diagnósticos" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status fechado" style="position: absolute; top: 10px; left: 10px;">Fechado</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Laboratório Cardio Diagnósticos</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Rita, 120 - Morada da Colina, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>07:00 - 18:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 5555-6666</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-heartbeat"></i>
+                <span>Exames cardíacos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-file-medical"></i>
+                <span>Laudos em 24h</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-numero">4.5</span>
+              <span class="rating-total">(150 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Holter</span>
+              <span class="especialidade-tag">Ecocardiograma</span>
+              <span class="especialidade-tag">Teste Ergométrico</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Exame
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laboratório 5 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Centro de Imagem Diagnóstica.jpg" alt="Centro de Imagem Diagnóstica" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Centro de Imagem Diagnóstica</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Rondon Pacheco, 1800 - Cazeza, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 18:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 6666-7777</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-x-ray"></i>
+                <span>Raio-X Digital</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-wheelchair"></i>
+                <span>Acessível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-numero">4.2</span>
+              <span class="rating-total">(120 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Raio-X</span>
+              <span class="especialidade-tag">Densitometria</span>
+              <span class="especialidade-tag">Mamografia</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Exame
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Laboratório 6 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Lab Express 24h.jpg" alt="Lab Express 24h" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Lab Express 24h</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Duque de Caxias, 800 - Centro, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>06:00 - 18:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 7777-8888</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-truck"></i>
+                <span>Coleta 24h</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-tachometer-alt"></i>
+                <span>Resultado rápido</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-numero">5.0</span>
+              <span class="rating-total">(280 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Urgência</span>
+              <span class="especialidade-tag">COVID-19</span>
+              <span class="especialidade-tag">Toxicológico</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Exame
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

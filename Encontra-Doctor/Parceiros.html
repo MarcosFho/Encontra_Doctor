@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Parceiros - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html" class="active"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="clinicas-container">
+      <div class="clinicas-header">
+        <h1>Nossos Parceiros</h1>
+        <p>Conheça as empresas e instituições que fazem parte da nossa rede de parceiros</p>
+      </div>
+
+      <div class="clinicas-filtros">
+        <div class="filtro-grupo">
+          <label for="categoria">Categoria</label>
+          <select id="categoria">
+            <option value="">Todas as categorias</option>
+            <option value="farmacia">Farmácias</option>
+            <option value="convenio">Convênios</option>
+            <option value="academia">Academias</option>
+            <option value="nutricao">Nutrição</option>
+          </select>
+        </div>
+        <div class="filtro-grupo">
+          <label for="localizacao">Localização</label>
+          <input type="text" id="localizacao" placeholder="Digite um bairro ou região">
+        </div>
+        <div class="filtro-grupo">
+          <label for="beneficio">Benefício</label>
+          <select id="beneficio">
+            <option value="">Todos os benefícios</option>
+            <option value="desconto">Desconto</option>
+            <option value="cashback">Cashback</option>
+            <option value="programa">Programa de pontos</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="clinicas-grid">
+        <!-- Parceiro 1 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Farmácia Saúde Total.jpg" alt="Farmácia Saúde Total" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Desconto 10%</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Farmácia Saúde Total</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Raulino Cotta Pacheco, 1000 - Martins, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>24 horas</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 3333-4444</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-percent"></i>
+                <span>Desconto em medicamentos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-truck"></i>
+                <span>Entrega grátis</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-numero">4.5</span>
+              <span class="rating-total">(320 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Medicamentos</span>
+              <span class="especialidade-tag">Dermocosméticos</span>
+              <span class="especialidade-tag">Perfumaria</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-tag"></i>
+                Ver Ofertas
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parceiro 2 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Academia Vida Ativa.jpg" alt="Academia Vida Ativa" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Desconto de 5% e Brindes</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Academia Vida Ativa</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Padre Pio, 500 - Martins, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>05:00 - 00:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 2222-3333</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-dumbbell"></i>
+                <span>Musculação e aeróbico</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-friends"></i>
+                <span>Aulas em grupo</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-numero">5.0</span>
+              <span class="rating-total">(180 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Musculação</span>
+              <span class="especialidade-tag">Pilates</span>
+              <span class="especialidade-tag">Crossfit</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Aula</button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parceiro 3 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Nutrição & Bem-estar.jpg" alt="Nutrição & Bem-estar" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Desconto de 10%</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Nutrição & Bem-estar</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Getulio Vargas, 123 - Centro, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 18:30</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 4444-5555</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-apple-alt"></i>
+                <span>Consultas nutricionais</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-chart-line"></i>
+                <span>Acompanhamento</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-numero">4.0</span>
+              <span class="rating-total">(150 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Nutrição Esportiva</span>
+              <span class="especialidade-tag">Reeducação</span>
+              <span class="especialidade-tag">Suplementação</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parceiro 4 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Ótica Visão Clara.jpg" alt="Ótica Visão Clara" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Desconto 15%</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Ótica Visão Clara</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Floriano Peixoto, 775 - Centro, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>09:00 - 18:30</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 5555-6666</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-glasses"></i>
+                <span>Armações e lentes</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-eye"></i>
+                <span>Exame de vista</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-numero">4.5</span>
+              <span class="rating-total">(200 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Óculos de Grau</span>
+              <span class="especialidade-tag">Lentes de Contato</span>
+              <span class="especialidade-tag">Solar</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-shopping-cart"></i>
+                Ver Produtos
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parceiro 5 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Fisio & Reabilitação.jpg" alt="Fisio & Reabilitação" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Desconto de 15%</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Fisio & Reabilitação</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Cesario Crosara, 5632 - Roosevelt, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>07:00 - 19:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 6666-7777</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-hand-holding-medical"></i>
+                <span>Reabilitação</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-wheelchair"></i>
+                <span>Acessibilidade</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-numero">4.0</span>
+              <span class="rating-total">(160 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Fisioterapia</span>
+              <span class="especialidade-tag">RPG</span>
+              <span class="especialidade-tag">Pilates</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Sessão
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parceiro 6 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="Farmácia Natural.jpg" alt="Farmácia Natural" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Desconto de 10%</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Farmácia Natural</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av Pampulha, 80 - Pampulha, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 20:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 7777-8888</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-leaf"></i>
+                <span>Produtos naturais</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-mortar-pestle"></i>
+                <span>Manipulação</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-numero">5.0</span>
+              <span class="rating-total">(240 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Fitoterápicos</span>
+              <span class="especialidade-tag">Homeopatia</span>
+              <span class="especialidade-tag">Suplementos</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-tag"></i>
+                Ver Produtos
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

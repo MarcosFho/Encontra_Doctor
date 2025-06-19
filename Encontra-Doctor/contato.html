@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Fale Conosco - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html" class="active"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="login-container">
+      <div class="login-header">
+        <i class="fas fa-envelope-open-text"></i>
+        <div>
+        <h2>Fale Conosco</h2>
+        <p>Entre em contato conosco, teremos prazer em ajudar!</p>
+        </div>
+      </div>
+
+      <form class="login-form">
+        <div class="form-group">
+          <label for="nome">
+            <i class="fas fa-user"></i>
+            Nome Completo
+          </label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+        </div>
+
+        <div class="form-group">
+          <label for="email">
+            <i class="fas fa-envelope"></i>
+            E-mail
+          </label>
+          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+        </div>
+
+        <div class="form-group">
+          <label for="telefone">
+            <i class="fas fa-phone"></i>
+            Telefone
+          </label>
+          <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+        </div>
+
+        <div class="form-group">
+          <label for="assunto">
+            <i class="fas fa-tag"></i>
+            Assunto
+          </label>
+          <select id="assunto" name="assunto" required>
+            <option value="">Selecione o assunto</option>
+            <option value="duvida">Dúvidas</option>
+            <option value="sugestao">Sugestões</option>
+            <option value="reclamacao">Reclamações</option>
+            <option value="elogio">Elogios</option>
+            <option value="outros">Outros</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="mensagem">
+            <i class="fas fa-comment"></i>
+            Mensagem
+          </label>
+          <textarea id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem" required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-paper-plane"></i>
+          Enviar Mensagem
+        </button>
+      </form>
+
+      <div class="contact-info">
+        <h3>Outras formas de contato</h3>
+        <div class="contact-methods">
+          <div class="contact-method">
+            <i class="fas fa-phone-alt"></i>
+            <div>
+              <h4>Telefone</h4>
+              <p>(34) 1234-5678</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-envelope"></i>
+            <div>
+              <h4>E-mail</h4>
+              <p>contato@encontradoctor.com.br</p>
+            </div>
+          </div>
+          <div class="contact-method">
+            <i class="fas fa-map-marker-alt"></i>
+            <div>
+              <h4>Endereço</h4>
+              <p>Av. João Naves de Ávila, 1331 - Uberlândia, MG</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

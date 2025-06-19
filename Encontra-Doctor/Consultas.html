@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Agendamento - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <a href="index.html">Início</a>
+    <a href="consultas.html" class="active">Agendamento</a>
+    <a href="resultados.html">Resultados/Exames</a>
+    <a href="avaliacoes.html">Avaliações</a>
+    <a href="clinicas.html">Clínicas</a>
+    <a href="laboratorios.html">Laboratórios</a>
+    <a href="parceiros.html">Parceiros</a>
+  </div>
+
+  <!-- Cabeçalho -->
+  <header>
+    <div class="titulo">Encontra Doctor Online</div>
+    <nav class="menu-superior">
+      <a href="index.html">Início</a>
+      <a href="faleconosco.html">Fale Conosco</a>
+      <a href="quemsomos.html">Quem Somos</a>
+      <a href="login.html">Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <div class="main">
+    <h2 class="secao-titulo">Agendamento de Consultas</h2>
+
+    <form class="formulario">
+      <label for="especialidade">Especialidade</label>
+      <select id="especialidade" required>
+        <option value="">Selecione</option>
+        <option>Clínico Geral</option>
+        <option>Cardiologista</option>
+        <option>Dermatologista</option>
+        <option>Ortopedista</option>
+      </select>
+
+      <label for="medico">Profissional</label>
+      <input type="text" id="medico" placeholder="Ex: Dr. João" required/>
+
+      <label for="data">Data da Consulta</label>
+      <input type="date" id="data" required/>
+
+      <label for="hora">Horário</label>
+      <input type="time" id="hora" required/>
+
+      <button type="submit">Agendar</button>
+    </form>
+  </div>
+</body>
+</html>

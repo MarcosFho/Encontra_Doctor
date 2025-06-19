@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Clínicas - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html" class="active"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="clinicas-container">
+      <div class="clinicas-header">
+        <h1>Clínicas Parceiras</h1>
+        <p>Encontre as melhores clínicas médicas próximas a você</p>
+      </div>
+
+      <div class="clinicas-filtros">
+        <div class="filtro-grupo">
+          <label for="especialidade">Especialidade</label>
+          <select id="especialidade">
+            <option value="">Todas as especialidades</option>
+            <option value="cardiologia">Cardiologia</option>
+            <option value="dermatologia">Dermatologia</option>
+            <option value="ortopedia">Ortopedia</option>
+            <option value="pediatria">Pediatria</option>
+          </select>
+        </div>
+        <div class="filtro-grupo">
+          <label for="localizacao">Localização</label>
+          <input type="text" id="localizacao" placeholder="Digite um bairro ou região">
+        </div>
+        <div class="filtro-grupo">
+          <label for="avaliacao">Avaliação</label>
+          <select id="avaliacao">
+            <option value="">Todas as avaliações</option>
+            <option value="4">4+ estrelas</option>
+            <option value="3">3+ estrelas</option>
+            <option value="2">2+ estrelas</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="clinicas-grid">
+        <!-- Clínica 1 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="clinica-saude-total.jpg" alt="Clínica Saúde Total" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Clínica Saúde Total</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Getulio Vargas, 525, Centro, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 20:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 3333-4444</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>15 médicos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Agenda disponível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-numero">4.5</span>
+              <span class="rating-total">(128 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Cardiologia</span>
+              <span class="especialidade-tag">Ortopedia</span>
+              <span class="especialidade-tag">Pediatria</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clínica 2 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="centro-medico-vida.jpg" alt="Centro Médico Vida" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Centro Médico Vida</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Augusto Cesar, 368, Lidice, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>07:00 - 19:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 2222-3333</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>12 médicos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Agenda disponível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-numero">5.0</span>
+              <span class="rating-total">(96 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Dermatologia</span>
+              <span class="especialidade-tag">Oftalmologia</span>
+              <span class="especialidade-tag">Clínica Geral</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clínica 3 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="instituto-de-saude.jpg" alt="Instituto de Saúde" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status fechado" style="position: absolute; top: 10px; left: 10px;">Fechado</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Instituto de Saúde</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Brigadeiro Sampaio, 1500 - Daniel Fonseca, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>09:00 - 18:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 4444-5555</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>8 médicos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Agenda disponível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-numero">4.0</span>
+              <span class="rating-total">(75 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Neurologia</span>
+              <span class="especialidade-tag">Psiquiatria</span>
+              <span class="especialidade-tag">Psicologia</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clínica 4 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="clinica-bem-estar.jpg" alt="Clínica Bem Estar" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Clínica Bem Estar</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Oscarina Chaves, 800 - Jardim Karaiba, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 19:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 5555-6666</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>10 médicos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Agenda disponível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+              </div>
+              <span class="rating-numero">4.5</span>
+              <span class="rating-total">(150 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Ginecologia</span>
+              <span class="especialidade-tag">Obstetrícia</span>
+              <span class="especialidade-tag">Nutrição</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clínica 5 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="centro-medico-esperança.jpg" alt="Centro Médico Esperança" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Centro Médico Esperança</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Av. Nicomedes Alves Santos, 2000 - Morada da Colina, Uberlândia - MG
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>07:30 - 20:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 6666-7777</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>18 médicos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Agenda disponível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+              </div>
+              <span class="rating-numero">4.0</span>
+              <span class="rating-total">(89 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Ortopedia</span>
+              <span class="especialidade-tag">Fisioterapia</span>
+              <span class="especialidade-tag">Acupuntura</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Clínica 6 -->
+        <div class="clinica-card">
+          <div class="clinica-imagem" style="display: flex; align-items: center; justify-content: center; height: 160px; background: #f5f5f5; position: relative;">
+            <img src="clinica-integrada-saude.jpg" alt="Clínica Integrada Saúde" style="width: 200px; height: 160px; object-fit: cover; border-radius: 8px;" />
+            <span class="clinica-status" style="position: absolute; top: 10px; left: 10px;">Aberto agora</span>
+          </div>
+          <div class="clinica-conteudo">
+            <div class="clinica-info">
+              <h3 class="clinica-nome">Clínica Integrada Saúde</h3>
+              <p class="clinica-endereco">
+                <i class="fas fa-map-marker-alt"></i>
+                Rua Teodoro Sampaio, 1000 - Centro, Uberaba - MG  
+              </p>
+            </div>
+            <div class="clinica-detalhes">
+              <div class="detalhe-item">
+                <i class="fas fa-clock"></i>
+                <span>08:00 - 21:00</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-phone"></i>
+                <span>(34) 7777-8888</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-user-md"></i>
+                <span>20 médicos</span>
+              </div>
+              <div class="detalhe-item">
+                <i class="fas fa-calendar-check"></i>
+                <span>Agenda disponível</span>
+              </div>
+            </div>
+            <div class="clinica-rating">
+              <div class="rating-stars">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <span class="rating-numero">5.0</span>
+              <span class="rating-total">(200 avaliações)</span>
+            </div>
+            <div class="clinica-especialidades">
+              <span class="especialidade-tag">Clínica Geral</span>
+              <span class="especialidade-tag">Pediatria</span>
+              <span class="especialidade-tag">Dermatologia</span>
+            </div>
+            <div class="clinica-acoes">
+              <button class="btn-agendar">
+                <i class="fas fa-calendar-plus"></i>
+                Agendar Consulta
+              </button>
+              <button class="btn-info">
+                <i class="fas fa-info-circle"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</body>
+</html>

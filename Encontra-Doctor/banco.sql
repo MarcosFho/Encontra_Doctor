@@ -1,0 +1,12 @@
+
+CREATE DATABASE IF NOT EXISTS encontra_doctor;
+USE encontra_doctor;
+
+CREATE TABLE IF NOT EXISTS usuarios (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    nome VARCHAR(100) NOT NULL,
+    email VARCHAR(100) NOT NULL UNIQUE,
+    senha VARCHAR(255) NOT NULL,
+    tipo_usuario VARCHAR(50) DEFAULT 'paciente',
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

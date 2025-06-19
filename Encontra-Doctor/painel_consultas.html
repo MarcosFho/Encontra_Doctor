@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Painel de Consultas - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html" class="active"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="dashboard-header">
+      <div class="welcome-section">
+        <h1>Painel de Consultas</h1>
+        <p>Bem-vindo(a), João Silva</p>
+      </div>
+      <div class="quick-actions">
+        <button class="btn-primary">
+          <i class="fas fa-plus"></i>
+          Nova Consulta
+        </button>
+        <button class="btn-outline">
+          <i class="fas fa-clock-rotate-left"></i>
+          Histórico
+        </button>
+      </div>
+    </div>
+
+    <div class="dashboard-grid">
+      <div class="dashboard-card proximas-consultas">
+        <div class="card-header">
+          <h2><i class="fas fa-calendar-check"></i> Próximas Consultas</h2>
+          <span class="badge">3 agendadas</span>
+        </div>
+        <div class="consultas-list">
+          <div class="consulta-item">
+            <div class="consulta-data">
+              <div class="data-box">
+                <span class="mes">MAR</span>
+                <span class="dia">20</span>
+              </div>
+              <span class="hora">14:30</span>
+            </div>
+            <div class="consulta-info">
+              <h3>Dr. Ricardo Santos</h3>
+              <p>Cardiologia</p>
+              <span class="local"><i class="fas fa-map-marker-alt"></i> Clínica Saúde Total</span>
+            </div>
+            <div class="consulta-actions">
+              <button class="btn-icon" title="Reagendar">
+                <i class="fas fa-clock"></i>
+              </button>
+              <button class="btn-icon" title="Cancelar">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="consulta-item">
+            <div class="consulta-data">
+              <div class="data-box">
+                <span class="mes">MAR</span>
+                <span class="dia">25</span>
+              </div>
+              <span class="hora">10:00</span>
+            </div>
+            <div class="consulta-info">
+              <h3>Dra. Maria Oliveira</h3>
+              <p>Dermatologia</p>
+              <span class="local"><i class="fas fa-map-marker-alt"></i> Centro Médico Vida</span>
+            </div>
+            <div class="consulta-actions">
+              <button class="btn-icon" title="Reagendar">
+                <i class="fas fa-clock"></i>
+              </button>
+              <button class="btn-icon" title="Cancelar">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+
+          <div class="consulta-item">
+            <div class="consulta-data">
+              <div class="data-box">
+                <span class="mes">ABR</span>
+                <span class="dia">02</span>
+              </div>
+              <span class="hora">09:15</span>
+            </div>
+            <div class="consulta-info">
+              <h3>Dr. Carlos Mendes</h3>
+              <p>Oftalmologia</p>
+              <span class="local"><i class="fas fa-map-marker-alt"></i> Instituto Visual</span>
+            </div>
+            <div class="consulta-actions">
+              <button class="btn-icon" title="Reagendar">
+                <i class="fas fa-clock"></i>
+              </button>
+              <button class="btn-icon" title="Cancelar">
+                <i class="fas fa-times"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-card calendario">
+        <div class="card-header">
+          <h2><i class="fas fa-calendar-alt"></i> Calendário</h2>
+          <div class="calendar-nav">
+            <button class="btn-icon"><i class="fas fa-chevron-left"></i></button>
+            <span>Março 2024</span>
+            <button class="btn-icon"><i class="fas fa-chevron-right"></i></button>
+          </div>
+        </div>
+        <div class="calendar-grid">
+          <div class="calendar-header">
+            <span>Dom</span>
+            <span>Seg</span>
+            <span>Ter</span>
+            <span>Qua</span>
+            <span>Qui</span>
+            <span>Sex</span>
+            <span>Sáb</span>
+          </div>
+          <div class="calendar-days">
+            <span class="other-month">25</span>
+            <span class="other-month">26</span>
+            <span class="other-month">27</span>
+            <span class="other-month">28</span>
+            <span class="other-month">29</span>
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>5</span>
+            <span>6</span>
+            <span>7</span>
+            <span>8</span>
+            <span>9</span>
+            <span>10</span>
+            <span>11</span>
+            <span>12</span>
+            <span>13</span>
+            <span>14</span>
+            <span>15</span>
+            <span>16</span>
+            <span>17</span>
+            <span>18</span>
+            <span>19</span>
+            <span class="has-event">20</span>
+            <span>21</span>
+            <span>22</span>
+            <span>23</span>
+            <span>24</span>
+            <span class="has-event">25</span>
+            <span>26</span>
+            <span>27</span>
+            <span>28</span>
+            <span>29</span>
+            <span>30</span>
+            <span>31</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-card estatisticas">
+        <div class="card-header">
+          <h2><i class="fas fa-chart-line"></i> Estatísticas</h2>
+        </div>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">12</span>
+              <span class="stat-label">Consultas Realizadas</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-clock"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Consultas Agendadas</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-user-md"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">5</span>
+              <span class="stat-label">Médicos Consultados</span>
+            </div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-icon">
+              <i class="fas fa-clinic-medical"></i>
+            </div>
+            <div class="stat-info">
+              <span class="stat-value">3</span>
+              <span class="stat-label">Clínicas Visitadas</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="dashboard-card historico">
+        <div class="card-header">
+          <h2><i class="fas fa-history"></i> Histórico Recente</h2>
+          <button class="btn-text">Ver Todos</button>
+        </div>
+        <div class="historico-list">
+          <div class="historico-item">
+            <div class="historico-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="historico-info">
+              <h3>Dr. Paulo Lima - Neurologista</h3>
+              <p>Consulta realizada em 10/03/2024</p>
+            </div>
+            <button class="btn-outline btn-sm">Agendar Retorno</button>
+          </div>
+          <div class="historico-item">
+            <div class="historico-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="historico-info">
+              <h3>Dra. Ana Silva - Pediatra</h3>
+              <p>Consulta realizada em 28/02/2024</p>
+            </div>
+            <button class="btn-outline btn-sm">Agendar Retorno</button>
+          </div>
+          <div class="historico-item">
+            <div class="historico-icon">
+              <i class="fas fa-check-circle"></i>
+            </div>
+            <div class="historico-info">
+              <h3>Dr. Roberto Santos - Ortopedista</h3>
+              <p>Consulta realizada em 15/02/2024</p>
+            </div>
+            <button class="btn-outline btn-sm">Agendar Retorno</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html> 

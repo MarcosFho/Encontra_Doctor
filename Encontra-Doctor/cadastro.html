@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cadastro - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="login-container cadastro-container">
+      <div class="login-header">
+        <i class="fas fa-user-plus"></i>
+        <h2>Criar Conta</h2>
+        <p>Preencha seus dados para se cadastrar</p>
+      </div>
+
+      <form action="cadastro.php" method="POST" class="login-form cadastro-form">
+        <div class="form-section">
+          <h3><i class="fas fa-user"></i> Dados Pessoais</h3>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="nome">
+                <i class="fas fa-user"></i>
+                Nome Completo
+              </label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required />
+            </div>
+
+            <div class="form-group">
+              <label for="cpf">
+                <i class="fas fa-id-card"></i>
+                CPF
+              </label>
+              <input type="text" id="cpf" name="cpf" placeholder="000.000.000-00" required />
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="data_nascimento">
+                <i class="fas fa-calendar"></i>
+                Data de Nascimento
+              </label>
+              <input type="date" id="data_nascimento" name="data_nascimento" required />
+            </div>
+
+            <div class="form-group">
+              <label for="genero">
+                <i class="fas fa-venus-mars"></i>
+                Gênero
+              </label>
+              <select id="genero" name="genero" required>
+                <option value="">Selecione</option>
+                <option value="masculino">Masculino</option>
+                <option value="feminino">Feminino</option>
+                <option value="outro">Outro</option>
+                <option value="nao_informar">Prefiro não informar</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3><i class="fas fa-envelope"></i> Contato</h3>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">
+                <i class="fas fa-envelope"></i>
+                E-mail
+              </label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required />
+            </div>
+
+            <div class="form-group">
+              <label for="telefone">
+                <i class="fas fa-phone"></i>
+                Telefone
+              </label>
+              <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3><i class="fas fa-map-marker-alt"></i> Endereço</h3>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="cep">
+                <i class="fas fa-map-pin"></i>
+                CEP
+              </label>
+              <input type="text" id="cep" name="cep" placeholder="00000-000" required />
+            </div>
+
+            <div class="form-group">
+              <label for="estado">
+                <i class="fas fa-map"></i>
+                Estado
+              </label>
+              <select id="estado" name="estado" required>
+                <option value="">Selecione o estado</option>
+                <option value="SP">São Paulo</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="MG">Goias</option>
+                <option value="MG">Brasilia</option>
+                <option value="MG">Tocantins</option>
+                <!-- Adicionar outros estados -->
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="cidade">
+              <i class="fas fa-city"></i>
+              Cidade
+            </label>
+            <input type="text" id="cidade" name="cidade" placeholder="Digite sua cidade" required />
+          </div>
+
+          <div class="form-group">
+            <label for="endereco">
+              <i class="fas fa-road"></i>
+              Endereço
+            </label>
+            <input type="text" id="endereco" name="endereco" placeholder="Rua, Avenida, etc." required />
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="numero">
+                <i class="fas fa-home"></i>
+                Número
+              </label>
+              <input type="text" id="numero" name="numero" placeholder="Nº" required />
+            </div>
+
+            <div class="form-group">
+              <label for="complemento">
+                <i class="fas fa-info-circle"></i>
+                Complemento
+              </label>
+              <input type="text" id="complemento" name="complemento" placeholder="Apto, Sala, etc." />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-section">
+          <h3><i class="fas fa-lock"></i> Senha</h3>
+          
+          <div class="form-row">
+            <div class="form-group">
+              <label for="senha">
+                <i class="fas fa-lock"></i>
+                Senha
+              </label>
+              <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required />
+            </div>
+
+            <div class="form-group">
+              <label for="confirmar_senha">
+                <i class="fas fa-lock"></i>
+                Confirmar Senha
+              </label>
+              <input type="password" id="confirmar_senha" name="confirmar_senha" placeholder="Confirme sua senha" required />
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group terms-group">
+          <label class="checkbox-label">
+            <input type="checkbox" required />
+            <span>Li e aceito os <a href="#">Termos de Uso</a> e a <a href="#">Política de Privacidade</a></span>
+          </label>
+        </div>
+
+        <button type="submit" class="btn-primary">
+          <i class="fas fa-user-plus"></i>
+          Criar Conta
+        </button>
+
+        <div class="login-links">
+          <p>Já tem uma conta? <a href="login.html">Faça login</a></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>

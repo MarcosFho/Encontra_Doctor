@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Avaliações - Encontra Doctor</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+</head>
+<body>
+  <div class="sidebar">
+    <div class="logo">
+      <i class="fas fa-hospital"></i>
+      <span>Encontra Doctor</span>
+    </div>
+    <a href="index.html"><i class="fas fa-home"></i> Início</a>
+    <a href="painel_consultas.html"><i class="fas fa-calendar-alt"></i> Agendamento</a>
+    <a href="painel_exames.html"><i class="fas fa-file-medical"></i> Resultados/Exames</a>
+    <a href="avaliacoes.html" class="active"><i class="fas fa-star"></i> Avaliações</a>
+    <a href="clinicas.html"><i class="fas fa-clinic-medical"></i> Clínicas</a>
+    <a href="laboratorios.html"><i class="fas fa-flask"></i> Laboratórios</a>
+    <a href="parceiros.html"><i class="fas fa-handshake"></i> Parceiros</a>
+  </div>
+
+  <header>
+    <div class="logo-header"><i class="fas fa-hospital"></i> <strong>Encontra Doctor</strong></div>
+    <nav class="menu-superior">
+      <a href="index.html"><i class="fas fa-home"></i> Início</a>
+      <a href="contato.html"><i class="fas fa-envelope"></i> Fale Conosco</a>
+      <a href="sobre.html"><i class="fas fa-info-circle"></i> Quem Somos</a>
+      <a href="login.html"><i class="fas fa-user"></i> Login/Cadastro</a>
+    </nav>
+  </header>
+
+  <div class="main">
+    <div class="avaliacoes-header">
+      <div class="avaliacoes-header-content">
+        <h1>Avaliações dos Pacientes</h1>
+        <p>Veja o que nossos pacientes dizem sobre os profissionais</p>
+        
+        <div class="rating-summary">
+          <div class="rating-overall">
+            <div class="rating-number">4.8</div>
+            <div class="rating-stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <div class="rating-count">Baseado em 1.248 avaliações</div>
+          </div>
+          <div class="rating-bars">
+            <div class="rating-bar">
+              <span class="stars">5 <i class="fas fa-star"></i></span>
+              <div class="bar-container">
+                <div class="bar" style="width: 75%"></div>
+              </div>
+              <span class="percentage">75%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="stars">4 <i class="fas fa-star"></i></span>
+              <div class="bar-container">
+                <div class="bar" style="width: 15%"></div>
+              </div>
+              <span class="percentage">15%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="stars">3 <i class="fas fa-star"></i></span>
+              <div class="bar-container">
+                <div class="bar" style="width: 7%"></div>
+              </div>
+              <span class="percentage">7%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="stars">2 <i class="fas fa-star"></i></span>
+              <div class="bar-container">
+                <div class="bar" style="width: 2%"></div>
+              </div>
+              <span class="percentage">2%</span>
+            </div>
+            <div class="rating-bar">
+              <span class="stars">1 <i class="fas fa-star"></i></span>
+              <div class="bar-container">
+                <div class="bar" style="width: 1%"></div>
+              </div>
+              <span class="percentage">1%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="avaliacoes-filters">
+      <div class="filter-group">
+        <label>Especialidade:</label>
+        <select>
+          <option value="">Todas as especialidades</option>
+          <option value="cardiologia">Cardiologia</option>
+          <option value="neurologia">Neurologia</option>
+          <option value="pediatria">Pediatria</option>
+          <option value="ortopedia">Ortopedia</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Ordenar por:</label>
+        <select>
+          <option value="recentes">Mais recentes</option>
+          <option value="relevantes">Mais relevantes</option>
+          <option value="positivas">Melhor avaliados</option>
+          <option value="negativas">Pior avaliados</option>
+        </select>
+      </div>
+      <div class="filter-group">
+        <label>Avaliação mínima:</label>
+        <div class="star-filter">
+          <i class="fas fa-star active"></i>
+          <i class="fas fa-star active"></i>
+          <i class="fas fa-star active"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+    <div class="avaliacoes-grid">
+      <div class="avaliacao-card">
+        <div class="avaliacao-header">
+          <div class="avaliacao-user">
+            <div class="user-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+              <h3>Maria Silva</h3>
+              <p>Consulta com Dr. Ricardo Santos - Cardiologista</p>
+            </div>
+          </div>
+          <div class="avaliacao-rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-date">15/03/2024</span>
+          </div>
+        </div>
+        <div class="avaliacao-content">
+          <p>Excelente atendimento! O Dr. Ricardo foi muito atencioso e explicou tudo detalhadamente. O consultório é muito bem organizado e a consulta começou no horário marcado.</p>
+        </div>
+        <div class="avaliacao-footer">
+          <div class="avaliacao-tags">
+            <span class="tag"><i class="fas fa-clock"></i> Pontual</span>
+            <span class="tag"><i class="fas fa-comment"></i> Boa comunicação</span>
+            <span class="tag"><i class="fas fa-thumbs-up"></i> Recomendado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="avaliacao-card">
+        <div class="avaliacao-header">
+          <div class="avaliacao-user">
+            <div class="user-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+              <h3>João Oliveira</h3>
+              <p>Consulta com Dra. Maria Oliveira - Pediatra</p>
+            </div>
+          </div>
+          <div class="avaliacao-rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star-half-alt"></i>
+            </div>
+            <span class="rating-date">14/03/2024</span>
+          </div>
+        </div>
+        <div class="avaliacao-content">
+          <p>A Dra. Maria é excelente com crianças! Minha filha ficou super à vontade durante a consulta. Profissional muito competente e carinhosa.</p>
+        </div>
+        <div class="avaliacao-footer">
+          <div class="avaliacao-tags">
+            <span class="tag"><i class="fas fa-heart"></i> Atenciosa</span>
+            <span class="tag"><i class="fas fa-child"></i> Boa com crianças</span>
+            <span class="tag"><i class="fas fa-thumbs-up"></i> Recomendado</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="avaliacao-card">
+        <div class="avaliacao-header">
+          <div class="avaliacao-user">
+            <div class="user-avatar">
+              <i class="fas fa-user"></i>
+            </div>
+            <div class="user-info">
+              <h3>Carlos Mendes</h3>
+              <p>Consulta com Dr. Paulo Lima - Neurologista</p>
+            </div>
+          </div>
+          <div class="avaliacao-rating">
+            <div class="stars">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <span class="rating-date">13/03/2024</span>
+          </div>
+        </div>
+        <div class="avaliacao-content">
+          <p>Profissional extremamente competente! O Dr. Paulo realizou um diagnóstico preciso e o tratamento recomendado foi muito eficaz. Muito satisfeito com o atendimento.</p>
+        </div>
+        <div class="avaliacao-footer">
+          <div class="avaliacao-tags">
+            <span class="tag"><i class="fas fa-user-md"></i> Competente</span>
+            <span class="tag"><i class="fas fa-clock"></i> Pontual</span>
+            <span class="tag"><i class="fas fa-thumbs-up"></i> Recomendado</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="pagination">
+      <a href="#" class="page-link active">1</a>
+      <a href="#" class="page-link">2</a>
+      <a href="#" class="page-link">3</a>
+      <span class="page-dots">...</span>
+      <a href="#" class="page-link">12</a>
+      <a href="#" class="page-link next">
+        <i class="fas fa-chevron-right"></i>
+      </a>
+    </div>
+
+    <div class="avaliacoes-cta">
+      <h2>Compartilhe sua Experiência</h2>
+      <p>Sua avaliação ajuda outros pacientes a encontrarem o profissional ideal</p>
+      <a href="#" class="btn-primary">
+        <i class="fas fa-star"></i>
+        Avaliar um Profissional
+      </a>
+    </div>
+  </div>
+</body>
+</html> 
