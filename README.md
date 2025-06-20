@@ -1,7 +1,7 @@
 
 # 🩺 Encontra Doctor Online
 
-Este projeto é um escopo detalhado de um sistema de agendamento de consultas médicas e exames, com **front-end em React Vite, HTML, CSS e JavaScript** e **back-end será desenvolvido em Java Spring Boot + MySQL**. Foi desenvolvido como trabalho acadêmico e visa facilitar a conexão entre pacientes e médicos, promovendo praticidade, organização e segurança.
+Este projeto é um escopo detalhado de um sistema de agendamento de consultas médicas e exames, com **front-end em HTML, CSS e JavaScript** e **back-end será desenvolvido em Java Spring Boot + MySQL**. Foi desenvolvido como trabalho acadêmico e visa facilitar a conexão entre pacientes e médicos, promovendo praticidade, organização e segurança.
 
 ---
 
@@ -16,13 +16,15 @@ Há integração com farmácias e laboratórios parceiros, notificações autom�
 ## 🚀 Tecnologias Utilizadas
 
 ### Front-end:
+- HTML5, CSS3, JavaScript
+- PHP
+### Será implementado:
 - React.js
 - Vite
-- HTML5, CSS3, JavaScript
 - React Router DOM
 - Axios
 
-### Back-end:
+### Back-end (a ser desenvolvido):
 - Java 17
 - Spring Boot
 - Spring Data JPA (Hibernate)
@@ -53,12 +55,11 @@ Encontra-Doctor/
 
 ### ✅ Pré-requisitos
 
-- Node.js (versão 18+)
-- npm ou yarn
-- MySQL 8+
-- Java 17 ou superior
-- Maven
-
+- Ter instalado o XAMPP
+- executar XAMPP -> start APACHE
+- Salvar o projeto na pasta: C:\xampp\htdocs
+  - Executar o qualquer arquivo.html pelo VScode ou com duplo clique
+- Ter instalado MySQL 8+ ou utilizar o XAMPP -> PHP My admin
 ---
 
 ### 1. Clonar o repositório
@@ -88,33 +89,6 @@ JWT_SECRET=sua_chave_secreta
 ```
 
 > A estrutura de tabelas será criada automaticamente pelo Hibernate (DDL auto-update).
-
----
-
-### 3. Rodar o back-end
-
-```bash
-cd backend
-mvn spring-boot:run
-```
-
-O servidor estará disponível em:  
-📍 http://localhost:8080
-
----
-
-### 4. Rodar o front-end
-
-```bash
-cd ../frontend
-npm install
-npm run dev
-```
-
-A aplicação estará em:  
-📍 http://localhost:5173
-
----
 
 ## 🛠️ Funcionalidades
 
